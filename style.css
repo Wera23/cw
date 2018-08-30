@@ -1,0 +1,877 @@
+body{
+    margin: 0;
+    padding: 0;
+  
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    height: 100vh;
+    color: #d0e9f0;
+}
+*{
+    box-sizing: border-box;
+}
+
+
+
+
+/*style dla planszy board_mountains*/
+
+
+.board_start_screen{   
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}    
+
+.board_start_screen{
+    background: url(img/board_start_background_top.png) left top no-repeat, url(img/board_start_background_bottom.png) right bottom no-repeat, url(img/board_start_background_center.jpg) left top repeat;
+    padding: 15px;
+    background-size: 230px, 1000px, auto;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;      
+}
+
+.board_start{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 25px;     
+    color: #c3f1f2;        
+    align-items: flex-end;
+}
+
+.board_start .about{
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;  
+
+}
+
+.board_start .about h2{
+    font-family: 'Give You Glory', cursive;
+    font-size: 35px;
+    text-align: right;
+    margin-bottom: 20px;    
+    letter-spacing: 3px;
+    color: #fd3636;
+}
+
+.board_start .about p{
+    
+    text-align: right;
+    margin-bottom: 25px;        
+    color: #468075;
+}
+
+.board_start .about{
+    width: 60%;
+}
+
+.board_start .photo .h2-photo{
+    font-family: 'Give You Glory', cursive;
+    font-size: 15px;
+}
+
+.board_start a{
+    text-decoration: none;
+    font-family: 'Give You Glory', cursive; 
+    font-size: 18px;
+    text-align: center;
+    color: #c3f1f2;
+    border-bottom: 1px dashed #c3f1f2;   
+    position: absolute; 
+    bottom: 15%;
+}
+
+.board_start a:hover{
+    color: #fd3636;
+    border-bottom: 1px dashed #fd3636;   
+
+}
+
+
+/*style dla planszy board_travel*/
+
+.board_travel_screen{
+    height: 100vh; 
+    width: 100vw;
+}
+
+.board_travel_gallery_photo{        
+    height: 24.1vw;
+    width: 25vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;    
+    opacity: 1;
+    transition: all 0.5s ease-out 0s;    
+}
+
+.board_travel_gallery_photo:hover{       
+       opacity: 0.5;     
+       filter: grayscale(100%);
+}
+
+.board_travel_gallery_photo .tekst{
+       height: 100%;
+       width: 100%;
+       font-size: 14px;
+       padding: 30%;
+       padding-top: 70%;
+       opacity: 0;    
+       color: rgb(255, 255, 255);      
+       text-align: center;  
+       font-weight: bold;   
+       text-transform: uppercase;
+}
+
+.board_travel_gallery_photo .tekst:hover{
+    opacity: 1;
+}
+
+.board_travel_gallery{        
+    height: 100vh; 
+    width: 100%;
+    display: grid;  
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 0;
+    justify-content: center;
+    align-content: center; 
+    background-color: #bcc7c4;  
+}
+
+.board_travel{    
+    position: relative;
+}
+
+.board_travel a{
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    text-decoration: none;
+    font-family: 'Give You Glory', cursive; 
+    font-size: 18px;
+    text-align: center;
+    color: #c3f1f2;
+    border-bottom: 1px dashed #c3f1f2;  
+}
+
+.board_travel a:hover{
+    color: #fd3636;
+    border-bottom: 1px dashed #fd3636;   
+}
+
+.board_travel_gallery_photo:nth-child(1) {
+    background-image: url(img/travel_photo1.jpg);
+}
+
+.board_travel_gallery_photo:nth-child(2) {
+    background-image: url(img/travel_photo2.jpg);
+}
+
+.board_travel_gallery_photo:nth-child(3) {
+    background-image: url(img/travel_photo3.jpg);
+}
+
+.board_travel_gallery_photo:nth-child(4) {
+    background-image: url(img/travel_photo4.jpg);
+}
+
+.board_travel_gallery_photo:nth-child(5) {
+    background-image: url(img/travel_photo5.jpg);
+}
+
+.board_travel_gallery_photo:nth-child(6) {
+    background-image: url(img/travel_photo6.jpg);
+}
+
+.board_travel_gallery_photo:nth-child(7) {
+    background-image: url(img/travel_photo7.jpg);
+}
+
+.board_travel_gallery_photo:nth-child(8) {
+    background-image: url(img/travel_photo8.jpg);
+}
+
+.board_travel_gallery_photo:nth-child(9) {
+    background-image: url(img/travel_photo9.jpg);
+}
+
+.board_travel_gallery_photo:nth-child(10) {
+    background-image: url(img/travel_photo10.jpg);
+}
+
+.board_travel_gallery_photo:nth-child(11) {
+    background-image: url(img/travel_photo11.jpg);
+}
+
+.board_travel_gallery_photo:nth-child(12) {
+    background-image: url(img/travel_photo12.jpg);
+}
+
+
+.board_travel_gallery_photo{
+display: inline-block;
+vertical-align: middle;
+-webkit-transform: perspective(1px) translateZ(0);
+transform: perspective(1px) translateZ(0);
+box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+position: relative;
+overflow: hidden;
+}
+.board_travel_gallery_photo:before {
+content: "";
+position: absolute;
+z-index: -1;
+left: 100%;
+right: 0;
+bottom: 0;
+background: #fe3a2e;
+height: 4px;
+-webkit-transition-property: left;
+transition-property: left;
+-webkit-transition-duration: 0.6s;
+transition-duration: 0.3s;
+-webkit-transition-timing-function: ease-out;
+transition-timing-function: ease-out;
+}
+.board_travel_gallery_photo:hover:before, .board_travel_gallery_photo:focus:before, .board_travel_gallery_photo:active:before {
+left: 0;
+}
+
+/*style dla planszy board_photography*/
+
+.board_photography_screen{
+    height: 100vh;
+    width: 100%;
+    background-color: #fcf6e7;
+    position: relative;
+}
+
+.board_photography_screen a{
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    text-decoration: none;
+    font-family: 'Give You Glory', cursive; 
+    font-size: 18px;
+    text-align: center;
+    color: #fd3636;
+    border-bottom: 1px dashed #fd3636; 
+}
+
+
+.board_photography_screen a:hover{
+    color: #c3f1f2;
+    border-bottom: 1px dashed #c3f1f2;  
+}
+
+
+.board_photography{
+    display: flex;
+    flex-direction: row;
+    position: relative;    
+    width: 100%;
+    height: 100vh;   
+}
+
+.board_photography_left{
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.board_photography_right{
+    
+    height: 100vh;
+    width: 50%;    
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: -2%;    
+}
+
+
+.board_photography_left .image img{
+    width: 500px;
+    height: 707px;
+}
+
+.board_photography_left .image{
+    overflow: hidden;
+}
+
+.board_photography_left .image img{
+    transition: all 0.6s ease-in-out;
+}
+
+.board_photography_left .image:hover img{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+
+.board_photography_left .logo{
+    margin-bottom: 10px;
+    font-family: 'Give You Glory', cursive;
+    font-size: 25px;    
+    color: #fe3a2e;
+    align-self: flex-start;
+    margin-left: 10%;
+    letter-spacing: 4px;
+}
+
+.board_photography_miniature{
+    background-image: url(img/photography_photo2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 400px;
+    height: 266px;  
+    transition: all 0.5s ease-in-out;
+
+}
+
+.board_photography_miniature_overlay{
+    transition: all 0.5s ease-in-out;
+    overflow: hidden;
+}
+
+.board_photography_miniature:hover{
+
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+
+.board_photography_text p{
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-bottom: 5%;;
+    font-size: 14px; 
+    color: black;
+}
+
+.board_photography_text:hover p{
+    font-weight: bold;
+}
+
+.board_photography_right a{
+    text-align: center;
+    color: #894c53;
+    border-bottom: 1px dashed #894c53;
+    display: block;
+    text-align: left;
+    text-decoration: none;
+    position: absolute; 
+    bottom: 20px;
+    font-family: 'Give You Glory', cursive;
+    font-size: 20px;
+    align-self: flex-end;
+    margin-right: 65px;
+    letter-spacing: 4px;    
+}
+
+.board_photography_right a {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+
+  .board_photography_right a:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #e0c2c3;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+.board_photography_right a:hover, .board_photography_right a:focus, .board_photography_right a:active {
+    color: #fd3636;
+  }
+.board_photography_right a:hover:before, .board_photography_right a:focus:before, .board_photography_right {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+    -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+    transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+}
+  
+
+/*style dla planszy board_photography_second*/
+
+.board_photography_second_screen{
+    background-color: #000000;
+    position: relative;   
+    width: 100%;
+    height: 100vh; 
+}
+
+.board_photography_second_text{
+    position: absolute;
+    top: 10%;
+    left: 8%;
+    font-size: 16px;
+    color: white;
+    width: 20%;
+}
+
+.board_photography_second{
+    display: flex;
+    flex-direction: row; 
+    position: relative;        
+}
+
+.board_photography_second_photo{
+    height: 100vh;
+    width: 33.3%;    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;  
+    transition: opacity 0.6s ease-in-out;
+    position: relative;
+    
+}
+
+.board_photography_second_photo:hover{
+    opacity: 0.5;
+   filter: grayscale(100%);
+}
+
+.board_photography_second_photo:nth-child(1){
+    background-image: url(img/secon_photography_photo1.jpg);
+}
+
+.board_photography_second_photo:nth-child(2){
+    background-image: url(img/secon_photography_photo2.jpg);
+}
+
+
+.board_photography_second_photo:nth-child(3){
+    background-image: url(img/secon_photography_photo3.jpg);
+}
+
+.board_photography_second_screen a{
+    position: absolute;
+    bottom: 35px;
+    left: 50%;
+    text-decoration: none;
+    font-family: 'Give You Glory', cursive; 
+    font-size: 18px;
+    text-align: center;
+    color: #c3f1f2;
+    border-bottom: 1px dashed #c3f1f2;  
+}
+
+.board_photography_second_screen a:hover{
+
+    color: #cd3636;
+    border-bottom: 1px dashed #cd3636;      
+}
+
+/*style dla planszy board_writting*/
+
+.board_writting_screen{
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+    position: relative;
+}
+
+#writting_next{    
+    bottom: 65px;
+    left: 50%;
+    text-decoration: none;
+    font-family: 'Give You Glory', cursive; 
+    font-size: 18px;
+    text-align: center;
+
+    color: #cd3636;
+    border-bottom: 1px dashed #cd3636;    
+}
+
+#writting_next:hover{
+    color: #c3f1f2;
+    border-bottom: 1px dashed #c3f1f2; 
+}
+
+.board_writting{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: center; 
+    height: 100%;       
+}
+
+
+.board_writting_text1,
+.board_writting_text2,
+.board_writting_text3{
+    height: 100%;
+    width: 30%;
+    font-size: 12px;
+    color: black;
+    text-align: left;
+    padding: 25px;
+
+  
+}
+
+
+
+.board_writting_header {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+
+  }
+  .board_writting_header:hover, .board_writting_header:focus, .board_writting_header:active {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+
+  
+.board_writting_header::after
+{
+    content: "";
+    display: block;
+    border-bottom: 2px solid #cd3636;;
+    width: 25%;
+    height: 2px;
+    
+}
+
+.board_writting_text1:hover p,
+.board_writting_text2:hover p,
+.board_writting_text3:hover p{
+    font-weight: bold;
+}
+
+.writting_photo_overlay1 img,
+.writting_photo_overlay2 img,
+.writting_photo_overlay3 img{
+    width: 300px;
+    height: 233px;
+    text-align: center;
+}
+
+.writting_photo_overlay1,
+.writting_photo_overlay2,
+.writting_photo_overlay3{
+    position: relative;
+    width: 300px;
+    height: 233px;
+}
+
+.writting_link_overlay1,
+.writting_link_overlay2,
+.writting_link_overlay3{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    background-color: #cd3636;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 55px;   
+ }
+
+ .writting_link_overlay1:hover,
+ .writting_link_overlay2:hover,
+ .writting_link_overlay3:hover{
+   opacity: 0.5; 
+}
+
+.board_writting_lead{
+   
+writing-mode:tb-rl;
+-webkit-transform:rotate(180deg);
+-ms-transform:rotate(180deg);
+transform: rotate(180deg);
+white-space:nowrap;
+margin-right: 4%;
+
+
+color: #cd3636;
+font-size: 22px; 
+letter-spacing: 4px;
+}
+
+
+  /* style do planszy board_why_programming*/
+
+.board_why_programming_screen{
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: row;
+
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+
+
+    background-color: #d0d3d4;
+
+
+}
+
+.board_why_programming_start{   
+    margin: 65px;
+    
+    
+}
+
+  .board_why_programming_start p{
+ color: black;
+ text-indent: 50px;
+ }
+
+ .board_why_programming_start h1{
+    color: #fd3636;
+    font-family: 'Give You Glory', cursive;
+    letter-spacing: 4px;
+    border-bottom: 1px dashed #fd3636;
+}
+
+
+ .board_why_programming_content{
+    display: flex;
+    flex-direction: column;
+
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin: 45px;
+    padding: 35px;
+    background-color: #c6dae7;
+  
+ }   
+
+
+ .board_why_programming_content_box1 p{
+     color: black;
+     font-size: 14px;
+     text-align: right;
+     font-family: 16px;
+ 
+}
+
+
+ .board_why_programming_content_box1 h1{
+    color: #1c3d66;
+    font-family: 'Give You Glory', cursive;
+    font-size: 22px;
+}
+
+.board_why_programming_content_box1 h1::before{
+    color: #fd3636;
+    content: "_";
+    font-size: 45px;
+    font-family: 'Give You Glory', cursive; 
+}
+
+
+.board_why_programming_start_author{
+    margin-top: 65px;
+}
+.board_why_programming_start_author img{
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+
+.board_why_programming_start_author{
+    width: 470px;
+    height: 470px;
+    background-color: #acc0cd;
+    border-radius: 50%;
+    position: relative;
+}
+
+
+/*style dla planszy board cats*/
+
+.the_entire_screen_cats{
+    height: 100vh;
+    width: 100%;
+    background-color: #679f94;
+    position: relative;
+}
+
+.board_cats{    
+    display: flex;
+    flex-direction: row;    
+    align-items: center; 
+    align-content: center;
+    justify-content: center;
+}
+
+.board_cats_left{
+height: 100vh;
+width: 30%;
+display: flex;
+flex-direction: column;
+
+padding: 5%;
+padding-top: 8%;
+}
+
+.board_cats_left h1{
+font-family: 'Give You Glory', cursive;
+color: #fd3636;
+margin-right: 35px;  
+    
+}
+
+.board_cats_left p{
+    color: black;
+    margin-right: 5px;
+    font-size: 14px;   
+    
+}
+
+.board_cats_right{
+    display: grid;  
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 1px;
+    justify-content: center;
+    align-content: center;
+    align-items: center; 
+    height: 66.7%;     
+}
+
+.baord_photo_cats{       
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+   
+    width: 22.2vw;
+    height: 22.2vw;
+
+    transition: all 0.5s ease-in-out;
+}
+
+.baord_photo_cats:hover{
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+   }
+
+.baord_photo_cats:nth-child(1){
+    background-image: url(img/cats_photo1.jpg);
+}
+
+.baord_photo_cats:nth-child(2){
+    background-image: url(img/cats_photo2.jpg);
+}
+
+.baord_photo_cats:nth-child(3){
+    background-image: url(img/cats_photo3.jpg);
+}
+
+.baord_photo_cats:nth-child(4){
+    background-image: url(img/cats_photo4.jpg);
+}
+
+.baord_photo_cats:nth-child(5){
+    background-image: url(img/cats_photo5.jpg);
+}
+
+.baord_photo_cats:nth-child(6){
+    background-image: url(img/cats_photo6.jpg);
+}
+
+.baord_photo_cats:nth-child(7){
+    background-image: url(img/cats_photo7.jpg);
+}
+
+.baord_photo_cats:nth-child(8){
+    background-image: url(img/cats_photo8.jpg);
+}
+
+.baord_photo_cats:nth-child(9){
+    background-image: url(img/cats_photo9.jpg);
+}
+
+
+
+.the_entire_screen_cats a{
+    position: absolute;
+    bottom: 15%;
+    left: 80%;
+    text-decoration: none;
+    font-family: 'Give You Glory', cursive; 
+    font-size: 18px;
+    text-align: center;
+    color: #c3f1f2;
+    border-bottom: 1px dashed #c3f1f2;  
+}
+
+
+.the_entire_screen_cats a:hover{
+    color: #cd3636;
+    border-bottom: 1px dashed #cd3636;
+}
+

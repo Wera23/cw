@@ -9,10 +9,13 @@
     <link rel="stylesheet" href="hover.css" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Give+You+Glory" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Franklin|Open+Sans" rel="stylesheet">
 </head>
 
 <body>
 
+
+    <!--plansza START-->
 
     <div class="board_start_screen" id="board_start">
         <div class="board_start">
@@ -27,23 +30,22 @@
                     mnóstwo, a ja swoimi umiejętnościami i wiedzą na pewno nie wybijam się jeszcze na czoło; mam świadomość,
                     że są lepsi i zawsze będą i jak wiele nauki przede mną. Ale ja też mogę być dobra, prawda?
 
-                    <br> O tym co już umiem, a czego jeszcze nie napiszę za chwilę. Może najpierw trochę swojego świata? Bo kto lubi
-                    kupować kota w worku?
-
-
+                    <br> O tym co już umiem, a czego jeszcze nie napiszę za chwilę. Może najpierw trochę swojego świata? Bo kto
+                    lubi kupować kota w worku?
             </div>
             <a href="#board_travel" class="hvr-bounce-to-top">->czytaj więcej</a>
         </div>
     </div>
-    </div>
 
 
-
-
+    <!--plansza PODRÓŻ-->
 
     <div class="board_travel_screen" id="board_travel">
         <div class="board_travel">
-            <div class="board_travel_header"></div>
+            <div class="board_travel_header">
+                <!--tu będzie nagłówek w js pojawiający się na środku planszy, po kilku sekundach zniknie-->
+            </div>
+
             <div class="board_travel_gallery">
 
                 <div class="board_travel_gallery_photo">
@@ -89,10 +91,14 @@
         </div>
     </div>
 
+
+
+    <!--plansza FOTOGRAFIA-->
+
     <div class="board_photography_screen" id="board_photography_1">
         <div class="board_photography">
             <div class="board_photography_left">
-                <div class="logo">_wera chodanionek fotografia</div>
+                <div class="logo">wera chodanionek fotografia</div>
                 <div class="image">
                     <img src="img/photography_photo1.jpg">
                 </div>
@@ -120,30 +126,27 @@
                     <div class="board_photography_miniature"></div>
                 </div>
             </div>
-
-
         </div>
         <a class="hvr-bounce-to-top" href="#board_photography_2">czytaj dalej</a>
     </div>
 
+    <!--plansza FOTOGRAFIA druga-->
+
     <div class="board_photography_second_screen" id="board_photography_2">
         <div class="board_photography_second_text">...podróżowanie + fotografia = fotografia podróżnicza!:- )</div>
-
-
         <div class="board_photography_second">
             <div class="board_photography_second_photo"></div>
             <div class="board_photography_second_photo"></div>
             <div class="board_photography_second_photo"></div>
         </div>
-
         <a class="hvr-bounce-to-top" href="#board_writting">czytaj dalej</a>
     </div>
 
-
+    <!--plansza PISANIE-->
 
     <div class="board_writting_screen" id="board_writting">
-
         <div class="board_writting">
+
             <div class="board_writting_lead">pisać też lubię!</div>
 
             <div class="board_writting_text1">
@@ -176,12 +179,9 @@
                         </a>
                     </div>
                 </div>
-
-
             </div>
 
             <div class="board_writting_text2">
-
                 <div class="writting_photo2">
                     <div class="writting_photo_overlay2">
                         <a href="https://idegora.wordpress.com/2017/08/23/niech-swiat-sie-nas-boi/">
@@ -192,9 +192,7 @@
                         </a>
                     </div>
                 </div>
-
                 <h1 class="board_writting_header">O tym, jak budowaliśmy 'dom' w Bieszczadach.</h1>
-
 
                 <p data-animate="bounceInUp">(...)– A stół? Tyyy. Ja bym chciała mieć stół! – rozkręcam się i nie zrażona swoimi anty-bob-budowniczymi
                     zdolnościami, projektancko też ułomna, podziwiam naszą powstającą małą osadę na solińskim nabrzeżu, którą
@@ -211,9 +209,6 @@
                     <br> – Będę zbierać swoje głazy, bo przecież ja mam mięśnie! – z dumą mówię, wojowniczo nastawiona do zdobywania
                     świata.(...)
                 </p>
-
-
-
             </div>
 
             <div class="board_writting_text3">
@@ -246,32 +241,27 @@
                     </div>
                 </div>
 
-
             </div>
         </div>
-
-
         <a class="hvr-bounce-to-top" id="writting_next" href="#cats">czytaj dalej</a>
     </div>
 
 
+    <!--plansza FOTOGRAFIA druga-->
     <div class="the_entire_screen_cats" id="cats">
-        <div class="board_cats">
 
-
-
+        <div class="board_cats">            
             <div class="board_cats_right">
-                <div class="baord_photo_cats"></div>
-                <div class="baord_photo_cats"></div>
-                <div class="baord_photo_cats"></div>
-                <div class="baord_photo_cats"></div>
-                <div class="baord_photo_cats"></div>
-                <div class="baord_photo_cats"></div>
-                <div class="baord_photo_cats"></div>
-                <div class="baord_photo_cats"></div>
-                <div class="baord_photo_cats"></div>
+                <div class="board_photo_cats"></div>
+                <div class="board_photo_cats"></div>
+                <div class="board_photo_cats"></div>
+                <div class="board_photo_cats"></div>
+                <div class="board_photo_cats"></div>
+                <div class="board_photo_cats"></div>
+                <div class="board_photo_cats"></div>
+                <div class="board_photo_cats"></div>
+                <div class="board_photo_cats"></div>
             </div>
-
 
             <div class="board_cats_left">
                 <h1>Kotki!</h1>
@@ -285,12 +275,7 @@
                     purus. Nunc imperdiet posuere sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
                     vel nunc a sapien feugiat bibendum sed et dui.</p>
             </div>
-
-
-
-
-
-
+            
         </div>
         <a class="hvr-bounce-to-top" href="#board_programming">czytaj dalej</a>
     </div>

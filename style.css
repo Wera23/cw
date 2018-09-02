@@ -1,15 +1,21 @@
+:root {
+    --font-size: 16px;
+}
+
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Lato', sans-serif;
     width: 100%;
-    height: 100vh;
     color: #d0e9f0;
-    font-size: 15px;
 }
 
 * {
     box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: var(--font-size);
+    line-height: calc(var(--font-size) * 1.3);
+
 }
 
 a {
@@ -35,8 +41,11 @@ a {
 
 /*style dla planszy board_start*/
 
-.board_start_screen {
+.board {
     width: 100vw;
+}
+
+.board_start_screen {
     height: 100vh;
     position: relative;
     align-items: center;
@@ -157,7 +166,7 @@ a {
 .board_travel_gallery_photo:before {
     content: "";
     position: absolute;
-    z-index: -1;
+    z-index: 1;
     left: 100%;
     right: 0;
     bottom: 0;
@@ -240,11 +249,7 @@ a {
     background-image: url(img/travel_photo12.jpg);
 }
 
-.board_travel_screen,
-.board_travel_gallery {
-    height: 100vh;
-    width: 100vw;
-}
+
 
 .board_travel a,
 .board_travel_gallery_photo .tekst {
@@ -340,13 +345,6 @@ a {
     width: 100vw;
 }
 
-.board_photography_screen,
-.board_photography,
-.board_photography_left,
-.board_photography_right {
-    height: 100vh;
-}
-
 .board_photography_left,
 .board_photography_right {
     width: 50vw;
@@ -372,7 +370,6 @@ a {
     background-color: #000000;
     position: relative;
     width: 100vw;
-    height: 100vh;
 }
 
 .board_photography_second_screen a {
@@ -404,7 +401,7 @@ a {
 
 .board_photography_second_photo {
     height: 100vh;
-    width: 33.3vw;
+    flex: 1;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -443,15 +440,14 @@ a {
     -ms-transform: rotate(180deg);
     transform: rotate(180deg);
     white-space: nowrap;
-    margin-right: 3%;
+    margin-left: 2%;
     color: #cd3636;
     font-size: 22px;
     letter-spacing: 4px;
 }
 
 #writting_next {
-    bottom: 65px;
-    /*dlaczego tak dużo*/
+    bottom: 65px; /* TODO: Dlaczego tak duzo? */
     left: 50%;
     text-decoration: none;
     font-size: 18px;
@@ -467,16 +463,19 @@ a {
 
 .board_writting {
     display: flex;
-    flex-direction: row;
     align-content: center;
     align-items: center;
     justify-content: center;
 }
 
+.board_writing_texts {
+    display: flex;
+}
+
 .board_writting_text1,
 .board_writting_text2,
 .board_writting_text3 {
-    width: 30vw;
+    flex: 1;
     font-size: 12px;
     color: black;
     text-align: left;
@@ -486,6 +485,7 @@ a {
 .board_writting_header {
     display: inline-block;
     vertical-align: middle;
+    font-weight: 500;
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -512,14 +512,6 @@ a {
     height: 2px;
 }
 
-.board_writting_screen,
-.board_writting,
-.board_writting_text1,
-.board_writting_text2,
-.board_writting_text3 {
-    height: 100vh;
-}
-
 .writting_photo_overlay1 img,
 .writting_photo_overlay2 img,
 .writting_photo_overlay3 img {
@@ -532,8 +524,15 @@ a {
 .writting_photo_overlay1,
 .writting_photo_overlay2,
 .writting_photo_overlay3 {
-    width: 300px;
     height: 233px;
+}
+
+
+.writting_photo_overlay1 img,
+.writting_photo_overlay2 img,
+.writting_photo_overlay3 img {
+    width: 100%;
+    object-fit: cover;
 }
 
 .writting_photo_overlay1,
@@ -552,7 +551,6 @@ a {
     padding: 55px;
     left: 0px;
     top: 0px;
-    font-family: 'Lato', sans-serif;
     font-size: 14px;
     font-weight: bold;
     text-align: center;
@@ -572,7 +570,6 @@ a {
 /*style dla planszy board cats*/
 
 .the_entire_screen_cats {
-    height: 100vh;
     width: 100vw;
     background-color: #364651;
     position: relative;
@@ -600,8 +597,6 @@ a {
 }
 
 .board_cats_left {
-    height: 100vh;
-    width: 30vw;
     display: flex;
     flex-direction: column;
     padding: 5%;
@@ -622,11 +617,11 @@ a {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    grid-gap: 1px;
+    grid-gap: 0;
     justify-content: center;
     align-content: center;
     align-items: center;
-    height: 66.7vw;
+    margin: 5% 0 5% 5%;
 }
 
 .board_photo_cats {
@@ -684,7 +679,6 @@ a {
 
 .board_why_programming_screen {
     width: 100%;
-    height: 100vh;
     display: flex;
     flex-direction: row;
     align-content: center;
@@ -755,4 +749,11 @@ a {
     background-color: #acc0cd;
     border-radius: 50%;
     position: relative;
+}
+
+
+@media (max-width: 1024px) {
+    .board_writing_texts {
+        flex-direction: column;
+    }
 }

@@ -142,7 +142,7 @@ a {
 }
 
 .board_travel_gallery_photo {
-    height: 24.1vw;
+    height: 25vw;
     width: 25vw;
     background-repeat: no-repeat;
     background-position: center;
@@ -276,11 +276,16 @@ a {
     border-bottom: 1px dashed #c3f1f2;
 }
 
-.board_photography_left .logo {
+.board_photography_left .logo,
+.logo_rwd {
     margin-bottom: 10px;    
     font-size: 25px;
     letter-spacing: 4px;
     color: #eeeeee;
+}
+
+.logo_rwd{
+    display: none;
 }
 
 .board_photography_left .image {
@@ -306,6 +311,8 @@ a {
 .board_photography_miniature_overlay {
     transition: all 0.5s ease-in-out;
     overflow: hidden;
+    width: 400px;
+    height: 266px;  
 }
 
 .board_photography_miniature {
@@ -315,7 +322,7 @@ a {
     background-size: cover;
     width: 400px;
     height: 266px;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;    
 }
 
 .board_photography_miniature:hover {
@@ -325,14 +332,17 @@ a {
     filter: blur(7px)
 }
 
-.board_photography_text p {
+.board_photography_text{
     margin-left: 8%;
     margin-right: 8%;
-    margin-bottom: 5%;
-    ;
+}
+
+.board_photography_text p {   
+    margin-bottom: 5%;   
     font-size: 14px;
     color: black;
 }
+
 
 .board_photography,
 .board_photography_left,
@@ -755,6 +765,27 @@ a {
 
 
 @media (max-width: 1024px) {
+
+     /*style dla board_travel*/
+     .board_travel_gallery {        
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;       
+    }
+
+    /*style dla board_photgraphy*/
+    .logo_rwd{
+        display: block;
+        text-align: center;
+        margin-top: 5%;
+    }
+    
+
+    .board_travel_gallery_photo {
+        height: 33.3vw;
+        width: 33.3vw;        
+    }
+
+
     .board_writing_texts {
         flex-direction: column;
     }

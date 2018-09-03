@@ -626,6 +626,7 @@ h1{
     flex-direction: column;
     padding: 5%;
     padding-top: 8%;
+    background-color: #324a42;
     
 }
 
@@ -658,13 +659,51 @@ h1{
     width: 22.2vw;
     height: 22.2vw;
     transition: all 0.5s ease-in-out;
+
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
 }
 
-.board_photo_cats:hover {
-    -webkit-transform: scale(0.9);
-    -ms-transform: scale(0.9);
-    transform: scale(0.9);
-}
+.board_photo_cats:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #ffcc41;
+    opacity: 0.6;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.7s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  .board_photo_cats:hover, .board_photo_cats:focus, board_photo_cats:active {
+    color: white;
+  }
+  .board_photo_cats:hover:before, .board_photo_cats:focus:before, .board_photo_cats:active:before {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+    -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+    transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+  }
+
+
 
 .board_photo_cats:nth-child(1) {
     background-image: url(img/cats_photo1.jpg);
@@ -917,6 +956,11 @@ h1{
     .the_entire_screen_cats a {        
         bottom: 1%;
         left: 50%;
+    }
+
+    .board_cats_left {
+        background-color: #779e91;
+        
     }
  
     

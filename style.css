@@ -674,6 +674,7 @@ h1{
 
 
 
+
 .board_photo_cats:before {
     content: "";
     position: absolute;
@@ -741,6 +742,21 @@ h1{
 .board_photo_cats:nth-child(9) {
     background-image: url(img/cats_photo9.jpg);
 }
+
+.cats_text_square p{
+    text-align: center;
+    padding: 20%;
+    padding-top: 80%;
+    color: rgb(0, 0, 0);
+    opacity: 0;    
+    font-weight: 600;  
+}
+
+.cats_text_square:hover p{    
+    opacity: 1;
+    transition: all 0.5s ease-in-out;       
+}
+
 
 /* style do planszy board_why_programming*/
 

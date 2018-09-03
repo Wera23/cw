@@ -1,0 +1,45 @@
+h1{
+    padding: 5% 5% 50%;
+}
+.circles {
+    display: flex;
+}
+
+.circle {
+    height: 274px;
+    width: 400px;   
+
+}
+
+.circle-1 {
+    background-image: url(img/parallax_mountain1.png);
+    position: absolute;
+    top: 2%;   
+}
+
+.circle-2 {
+    background-image: url(img/parallax_mountain2.png);
+    position: absolute;
+    top: 4%;  
+}
+
+.circle-3 {
+    background-image: url(img/parallax_mountain3.png);
+    position: absolute;
+    top: 3%;     
+}
+
+.circle-4 {
+    background-image: url(img/parallax_mountain4.png);
+    position: absolute;
+    top: 2%;      
+}
+
+.circle-5 {
+    background-image: url(img/parallax_mountain5.png);
+    position: absolute;
+    top:1%;     
+}
+
+
+

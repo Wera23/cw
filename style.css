@@ -57,7 +57,7 @@ a {
 }
 
 .board_start_screen {
-    background: url(img/board_start_background_top.png) left top no-repeat, url(img/board_start_background_bottom.png) right bottom no-repeat, url(img/board_start_background_center.jpg) left top repeat;
+    background: url(img/board_start_background_top_wersja2.png) left top no-repeat, url(img/board_start_background_bottom.png) right bottom no-repeat, url(img/board_start_background_center.jpg) left top repeat;
     padding: 15px;
     background-size: 230px, auto, auto;
 }
@@ -76,7 +76,7 @@ a {
 }
 
 .board_start .about {
-    width: 60%;
+    width: 65%;
 }
 
 .board_start .about h2 {
@@ -769,6 +769,46 @@ a {
 }
 
 
+/*style dla gwiazdek Parallax*/
+.stars {
+    display: flex;
+}
+.stars {
+    height: 260px;
+    width: 350px; 
+}
+
+.stars-1 {
+    background-image: url(img/parallax_star1.png);
+    position: absolute;
+    top: 5%;   
+}
+
+.stars-2 {
+    background-image: url(img/parallax_star2.png);
+    position: absolute;
+    top: 1%;      
+}
+
+.stars-3 {
+    background-image: url(img/parallax_star3.png);
+    position: absolute;
+    top: 3%;     
+}
+
+.stars-4 {
+    background-image: url(img/parallax_star4.png);
+    position: absolute;
+    top: 3%;      
+}
+
+.stars-5 {
+    background-image: url(img/parallax_star5.png);
+    position: absolute;
+    top: 2%;     
+}
+
+
 @media (max-width: 1024px) {
 
     /*style ogóle*/
@@ -845,8 +885,20 @@ a {
         display: none;
     }
 
-    
+    /*style dla planszy kotki*/
+    .board_cats {       
+        flex-direction: column;        
+    }
 
+    .board_cats_right {        
+        margin: 0;
+    } 
+    
+    .board_photo_cats {       
+        height: 33.3vw;
+        width: 33.3vw;   
+     
+    }
  
 }
 

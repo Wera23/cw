@@ -15,6 +15,23 @@ $(document).ready(function() {
 
 });
 
+$( function () {
+    var scrolled;
+    var $window = $(window);
+    var el
+    $window.on('scroll', function () {
+        scrolled = $(window).scrollTop();
+        
+        el = $('.parallax');
+        el.each(function () {
+            var parallax = scrolled * $(this).data('speed');
+            $(this).css({
+                'top': parallax
+            });
+        });
+    });
+});
+
 
 jQuery(document).ready(function() {
     $(".square_miniature").mouseover(function() {

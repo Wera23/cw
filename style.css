@@ -321,6 +321,14 @@ a {
 }
 
 
+.point::before{
+    color: #ddcd75;
+    content: ".";   
+    font-size: 45px;
+    margin: 2%;
+}
+
+
 .board_photography_miniature_overlay {
     transition: all 0.5s ease-in-out;
     overflow: hidden;
@@ -357,7 +365,6 @@ a {
    color: #f3eae9;
 }
 
-
 .board_photography,
 .board_photography_left,
 .board_photography_right {
@@ -375,7 +382,6 @@ a {
     flex: 1;
 }
 
-
 .board_photography_left,
 .board_photography_right {
     flex-direction: column;
@@ -385,7 +391,6 @@ a {
 }
 
 /*style dla planszy board_photography_second*/
-
 .board_photography_second_screen {
     background-color: #000000;
     position: relative;

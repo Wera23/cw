@@ -320,14 +320,12 @@ a {
     background-color: #2d2f3e;
 }
 
-
 .point::before{
     color: #ddcd75;
     content: ".";   
     font-size: 45px;
     margin: 2%;
 }
-
 
 .board_photography_miniature_overlay {
     transition: all 0.5s ease-in-out;

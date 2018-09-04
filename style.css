@@ -272,8 +272,7 @@ a {
 
 .board_photography_screen {
     background-color: #b1b96c;
-    position: relative;
-    
+    position: relative;    
 }
 
 .board_photography_screen a {
@@ -320,12 +319,6 @@ a {
     background-color: #2d2f3e;
 }
 
-.point::before{
-    color: #ddcd75;
-    content: ".";   
-    font-size: 45px;
-    margin: 2%;
-}
 
 .board_photography_miniature_overlay {
     transition: all 0.5s ease-in-out;
@@ -357,10 +350,8 @@ a {
 }
 
 .board_photography_text p {   
-    margin-bottom: 5%;   
-    font-size: 14px;
-   /*color: #eadcdb;*/
-   color: #f3eae9;
+    margin-bottom: 5%;  
+    color: #f3eae9;
 }
 
 .board_photography,
@@ -539,7 +530,6 @@ a {
     width: 25%;
     height: 2px;
 }
-
 
 .writting_photo_overlay1 img,
 .writting_photo_overlay2 img,
@@ -840,9 +830,11 @@ a {
 /*style dla gwiazdek Parallax*/
 .stars {
     display: flex;
+    max-height: 500px;
 }
 .stars {
     height: 260px;
+    
     width: 350px; 
 }
 

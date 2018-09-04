@@ -29,9 +29,6 @@ a {
     padding: 1%;
 }
 
-h1{
-    
-}
 
 .board_start .about h2,
 .board_start .photo .h2-photo,
@@ -77,6 +74,7 @@ h1{
     position: absolute;
     color: #c3f1f2;
     border-bottom: 1px dashed #c3f1f2;
+    bottom: 5%;
 }
 
 .board_start .about {
@@ -157,43 +155,53 @@ h1{
     background-size: cover;
     opacity: 1;
     transition: all 0.5s ease-out 0s;
-    display: inline-block;
+  
+       display: inline-block;
     vertical-align: middle;
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
     position: relative;
-    overflow: hidden;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
 }
 
-.board_travel_gallery_photo:hover {
-    opacity: 0.5;
+.board_travel_gallery_photo:hover{
     filter: grayscale(100%);
 }
 
 .board_travel_gallery_photo:before {
     content: "";
     position: absolute;
-    z-index: 1;
-    left: 100%;
+    z-index: -1;
+    top: 0;
+    left: 0;
     right: 0;
     bottom: 0;
-    background: #bcc7c3;
-    height: 3px;
-    -webkit-transition-property: left;
-    transition-property: left;
-    -webkit-transition-duration: 0.6s;
-    transition-duration: 0.3s;
+    background: #ff0022;
+    opacity: 0.6;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.s;
     -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
-}
-
-.board_travel_gallery_photo:hover:before,
-.board_travel_gallery_photo:focus:before,
-.board_travel_gallery_photo:active:before {
-    left: 0;
-}
-
+  }
+  .board_travel_gallery_photo:hover, .board_travel_gallery_photo:focus, board_travel_gallery_photo:active {
+    color: white;
+  }
+  .board_travel_gallery_photo:hover:before, .board_travel_gallery_photo:focus:before, .board_travel_gallery_photo:active:before {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+    -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+    transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+  }
 .board_travel_gallery_photo .tekst {
     height: 100%;
     width: 100%;
@@ -202,12 +210,10 @@ h1{
     opacity: 0;
     color: rgb(255, 255, 255);
     font-weight: bold;
-    text-transform: uppercase;
-}
+    text-transform: uppercase;}
 
 .board_travel_gallery_photo .tekst:hover {
-    opacity: 1;
-}
+    opacity: 1;}
 
 .board_travel_gallery_photo:nth-child(1) {
     background-image: url(img/travel_photo1.jpg);
@@ -591,6 +597,7 @@ h1{
 }
 
 
+
 /*style dla planszy board cats*/
 
 .the_entire_screen_cats {
@@ -625,7 +632,8 @@ h1{
     flex-direction: column;
     padding: 5%;
     padding-top: 8%;
-    background-color: #324a42;    
+    background-color: #324a42;
+    
 }
 
 .board_cats_left h1 {
@@ -672,6 +680,7 @@ h1{
 
 
 
+
 .board_photo_cats:before {
     content: "";
     position: absolute;
@@ -702,6 +711,7 @@ h1{
     -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
     transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
   }
+
 
 .board_photo_cats:nth-child(1) {
     background-image: url(img/cats_photo1.jpg);
@@ -752,6 +762,7 @@ h1{
     opacity: 1;
     transition: all 0.5s ease-in-out;       
 }
+
 
 /* style do planszy board_why_programming*/
 

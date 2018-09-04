@@ -591,7 +591,6 @@ h1{
 }
 
 
-
 /*style dla planszy board cats*/
 
 .the_entire_screen_cats {
@@ -626,8 +625,7 @@ h1{
     flex-direction: column;
     padding: 5%;
     padding-top: 8%;
-    background-color: #324a42;
-    
+    background-color: #324a42;    
 }
 
 .board_cats_left h1 {
@@ -674,7 +672,6 @@ h1{
 
 
 
-
 .board_photo_cats:before {
     content: "";
     position: absolute;
@@ -705,7 +702,6 @@ h1{
     -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
     transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
   }
-
 
 .board_photo_cats:nth-child(1) {
     background-image: url(img/cats_photo1.jpg);
@@ -756,7 +752,6 @@ h1{
     opacity: 1;
     transition: all 0.5s ease-in-out;       
 }
-
 
 /* style do planszy board_why_programming*/
 

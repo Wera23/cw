@@ -58,7 +58,7 @@ a {
 }
 
 .board_start_screen {
-    background: url(img/board_start_background_top_wersja2.png) left top no-repeat, url(img/board_start_background_bottom.png) right bottom no-repeat, url(img/board_start_background_center.jpg) left top repeat;
+    background: url(img/elements/board_start_background_top_wersja2.png) left top no-repeat, url(img/elements/board_start_background_bottom.png) right bottom no-repeat, url(img/elements/board_start_background_center.jpg) left top repeat;
     padding: 15px;
     background-size: 230px, auto, auto;
 }
@@ -154,9 +154,8 @@ a {
     background-position: center;
     background-size: cover;
     opacity: 1;
-    transition: all 0.5s ease-out 0s;
-  
-       display: inline-block;
+    transition: all 0.5s ease-out 0s;  
+    display: inline-block;
     vertical-align: middle;
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
@@ -216,53 +215,52 @@ a {
     opacity: 1;}
 
 .board_travel_gallery_photo:nth-child(1) {
-    background-image: url(img/travel_photo1.jpg);
+    background-image: url(img/travel/travel_photo1.jpg);
 }
 
 .board_travel_gallery_photo:nth-child(2) {
-    background-image: url(img/travel_photo2.jpg);
+    background-image: url(img/travel/travel_photo2.jpg);
 }
 
 .board_travel_gallery_photo:nth-child(3) {
-    background-image: url(img/travel_photo3.jpg);
+    background-image: url(img/travel/travel_photo3.jpg);
 }
 
 .board_travel_gallery_photo:nth-child(4) {
-    background-image: url(img/travel_photo4.jpg);
+    background-image: url(img/travel/travel_photo4.jpg);
 }
 
 .board_travel_gallery_photo:nth-child(5) {
-    background-image: url(img/travel_photo5.jpg);
+    background-image: url(img/travel/travel_photo5.jpg);
 }
 
 .board_travel_gallery_photo:nth-child(6) {
-    background-image: url(img/travel_photo6.jpg);
+    background-image: url(img/travel/travel_photo6.jpg);
 }
 
 .board_travel_gallery_photo:nth-child(7) {
-    background-image: url(img/travel_photo7.jpg);
+    background-image: url(img/travel/travel_photo7.jpg);
 }
 
 .board_travel_gallery_photo:nth-child(8) {
-    background-image: url(img/travel_photo8.jpg);
+    background-image: url(img/travel/travel_photo8.jpg);
 }
 
 .board_travel_gallery_photo:nth-child(9) {
-    background-image: url(img/travel_photo9.jpg);
+    background-image: url(img/travel/travel_photo9.jpg);
 }
 
 .board_travel_gallery_photo:nth-child(10) {
-    background-image: url(img/travel_photo10.jpg);
+    background-image: url(img/travel/travel_photo10.jpg);
 }
 
 .board_travel_gallery_photo:nth-child(11) {
-    background-image: url(img/travel_photo11.jpg);
+    background-image: url(img/travel/travel_photo11.jpg);
 }
 
 .board_travel_gallery_photo:nth-child(12) {
-    background-image: url(img/travel_photo12.jpg);
+    background-image: url(img/travel/travel_photo12.jpg);
 }
-
 
 
 .board_travel a,
@@ -331,7 +329,7 @@ a {
 }
 
 .board_photography_miniature {
-    background-image: url(img/photography_photo2.jpg);
+    background-image: url(img/photography/photography_photo2.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -438,15 +436,15 @@ a {
 }
 
 .board_photography_second_photo:nth-child(1) {
-    background-image: url(img/secon_photography_photo1.jpg);
+    background-image: url(img/photography/secon_photography_photo1.jpg);
 }
 
 .board_photography_second_photo:nth-child(2) {
-    background-image: url(img/secon_photography_photo2.jpg);
+    background-image: url(img/photography/secon_photography_photo2.jpg);
 }
 
 .board_photography_second_photo:nth-child(3) {
-    background-image: url(img/secon_photography_photo3.jpg);
+    background-image: url(img/photography/secon_photography_photo3.jpg);
 }
 
 /*style dla planszy board_writting*/
@@ -469,8 +467,7 @@ a {
     letter-spacing: 4px;
 }
 
-#writting_next {
-    bottom: 65px; /* TODO: Dlaczego tak duzo? */
+#writting_next {   
     left: 50%;
     text-decoration: none;
     font-size: 18px;
@@ -610,7 +607,7 @@ a {
     position: absolute;
     bottom: 9%;
     left: 80%;
-    color: #ff8400;
+    color: #ff7e00;
     border-bottom: 1px dashed #ff8400;
 }
 
@@ -633,7 +630,7 @@ a {
     padding: 5%;
     padding-top: 8%;
     background-color: #324a42;
-    
+
 }
 
 .board_cats_left h1 {
@@ -675,10 +672,8 @@ a {
     -webkit-transition-property: color;
     transition-property: color;
     -webkit-transition-duration: 0.5s;
-    transition-duration: 0.5s;
-}
-
-
+    transition-duration: 0.5s;  
+} 
 
 
 .board_photo_cats:before {
@@ -697,8 +692,8 @@ a {
     transform-origin: 50% 0;
     -webkit-transition-property: transform;
     transition-property: transform;
-    -webkit-transition-duration: 0.5s;
-    transition-duration: 0.7s;
+    -webkit-transition-duration: 0.9s;
+    transition-duration: 0.9s;
     -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
   }
@@ -710,43 +705,42 @@ a {
     transform: scaleY(1);
     -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
     transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
-  }
-
+}
 
 .board_photo_cats:nth-child(1) {
-    background-image: url(img/cats_photo1.jpg);
+    background-image: url(img/cats/cats_photo1.jpg);
 }
 
 .board_photo_cats:nth-child(2) {
-    background-image: url(img/cats_photo2.jpg);
+    background-image: url(img/cats/cats_photo2.jpg);
 }
 
 .board_photo_cats:nth-child(3) {
-    background-image: url(img/cats_photo3.jpg);
+    background-image: url(img/cats/cats_photo3.jpg);
 }
 
 .board_photo_cats:nth-child(4) {
-    background-image: url(img/cats_photo4.jpg);
+    background-image: url(img/cats/cats_photo4.jpg);
 }
 
 .board_photo_cats:nth-child(5) {
-    background-image: url(img/cats_photo5.jpg);
+    background-image: url(img/cats/cats_photo5.jpg);
 }
 
 .board_photo_cats:nth-child(6) {
-    background-image: url(img/cats_photo6.jpg);
+    background-image: url(img/cats/cats_photo6.jpg);
 }
 
 .board_photo_cats:nth-child(7) {
-    background-image: url(img/cats_photo7.jpg);
+    background-image: url(img/cats/cats_photo7.jpg);
 }
 
 .board_photo_cats:nth-child(8) {
-    background-image: url(img/cats_photo8.jpg);
+    background-image: url(img/cats/cats_photo8.jpg);
 }
 
 .board_photo_cats:nth-child(9) {
-    background-image: url(img/cats_photo9.jpg);
+    background-image: url(img/cats/cats_photo9.jpg);
 }
 
 .cats_text_square p{
@@ -755,7 +749,7 @@ a {
     padding-top: 80%;
     color: rgb(0, 0, 0);
     opacity: 0;    
-    font-weight: 600;  
+    font-weight: bold;  
 }
 
 .cats_text_square:hover p{    
@@ -765,7 +759,7 @@ a {
 
 /* style do planszy board_why_programming*/
 
-.board_why_programming_screen {
+/*.board_why_programming_screen {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -837,7 +831,8 @@ a {
     background-color: #acc0cd;
     border-radius: 50%;
     position: relative;
-}
+}*/
+
 
 /*style dla gwiazdek Parallax*/
 .stars {
@@ -849,31 +844,31 @@ a {
 }
 
 .stars-1 {
-    background-image: url(img/parallax_star1.png);
+    background-image: url(img/elements/parallax_star1.png);
     position: absolute;
     top: 5%;   
 }
 
 .stars-2 {
-    background-image: url(img/parallax_star2.png);
+    background-image: url(img/elements/parallax_star2.png);
     position: absolute;
     top: 1%;      
 }
 
 .stars-3 {
-    background-image: url(img/parallax_star3.png);
+    background-image: url(img/elements/parallax_star3.png);
     position: absolute;
     top: 3%;     
 }
 
 .stars-4 {
-    background-image: url(img/parallax_star4.png);
+    background-image: url(img/elements/parallax_star4.png);
     position: absolute;
     top: 3%;      
 }
 
 .stars-5 {
-    background-image: url(img/parallax_star5.png);
+    background-image: url(img/elements/parallax_star5.png);
     position: absolute;
     top: 2%;     
 }

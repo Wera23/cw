@@ -74,8 +74,8 @@ a {
 
 .board_start a {
     position: absolute;
-    color: #FF6622;
-    border-bottom: 1px dashed #FF6622;
+    color: #FF5604;
+    border-bottom: 1px dashed #FF5604;
     bottom: 9%;
 }
 
@@ -622,8 +622,8 @@ a {
     position: absolute;
     bottom: 9%;
     left: 80%;
-    color: #ff7e00;
-    border-bottom: 1px dashed #ff8400;
+    color: #FF6004;
+    border-bottom: 1px dashed #FF6004;
 }
 
 .the_entire_screen_cats a:hover {
@@ -776,24 +776,26 @@ a {
 /*style dla board_programming*/
 
 .board_programming{
-    background-color: #ffcc41;
-  
-    width: 100vw;
-    color: #233D4D; 
-    display: flex;
-    padding: 5%;
+    background-color: #ffcc41;  
+       
 }
 
 .contact{
-    flex: 1;
-    margin-left: 2%;
+    padding: 7vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+}
+.contact a{
+    font-size: 2vh;
+    color: black;
 }
 
-.programming{
-    flex: 2;   
-    margin-right: 2%;
+.contact a:hover{
+    background-color: #fabb0f;
 }
-
 
 /*style dla gwiazdek Parallax*/
 .stars {

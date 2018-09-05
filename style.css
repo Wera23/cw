@@ -74,14 +74,14 @@ a {
 
 .board_start a {
     position: absolute;
-    color: #FF5604;
-    border-bottom: 1px dashed #FF5604;
+    color: #ff0022;
+    border-bottom: 1px dashed #ff0022;
     bottom: 9%;
 }
 
 .board_start a:hover {
-    color: #ff0022;
-    border-bottom: 1px dashed #ff0022;
+    color: #14132E;
+    border-bottom: 1px dashed #14132E;
 }
 
 .board_start_content{
@@ -91,10 +91,10 @@ a {
 
 .board_start_content .about h1 {
     font-family: 'Amatic SC', cursive;
-    font-weight: 700;
-    margin-bottom: 20px;
-    font-size: 35px;
+    font-weight: 700;   
+    font-size: 45px;
     letter-spacing: 3px;
+    margin-bottom: 20px;
     text-align: right;
     color: #fd3636;
 }
@@ -109,29 +109,28 @@ a {
     font-size: 15px;
 }
 
-
-.board_start_content .about {
-    display: flex;
-    flex-direction: column;
-}
-
 .board_start_screen,
 .board_start {
     justify-content: center;
     align-content: center;
 }
 
-.list{
-    display: flex;
-    flex-direction: column;   
-    margin-right: 5%;
+.what,
+.other_stuff{    
+    flex-direction: row; 
+    padding: 8%;   
+}
+
+.list,
+.board_start_content .about {
+    flex-direction: column;
 }
 
 .what,
-.other_stuff{    
+.list,
+.other_stuff,
+.board_start_content .about{
     display: flex;
-    flex-direction: row; 
-    padding: 8%;   
 }
 
 .fontello_html,
@@ -150,13 +149,13 @@ a {
 .board_travel a {
     position: absolute;
     bottom: 5%;
-    color: #c3f1f2;
-    border-bottom: 1px dashed #c3f1f2;
+    color: #ffffff;
+    border-bottom: 1px dashed #ffffff;
 }
 
 .board_travel a:hover {
-    color: #fd3636;
-    border-bottom: 1px dashed #fd3636;
+    color: #2d2f3e;
+    border-bottom: 1px dashed #2d2f3e;
 }
 
 .board_travel_gallery {
@@ -649,7 +648,7 @@ a {
 
 .board_cats_left h1 {
     color: #ff8400;
-    margin-right: 35px;
+    font-size: 3vh;
 }
 
 .board_cats_left p {
@@ -688,7 +687,6 @@ a {
     -webkit-transition-duration: 0.5s;
     transition-duration: 0.5s;  
 } 
-
 
 .board_photo_cats:before {
     content: "";
@@ -774,19 +772,14 @@ a {
 
 /*style dla board_programming*/
 
-.board_programming{
-    background-color: #ffcc41;  
-       
-}
-
 .contact{
-    padding: 7vh;
+    width: 100vw;  
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    width: 100vw;
-   
+    justify-content: center; 
+    padding: 4%;
+    background-color: #ffcc41;       
 }
 .contact a{
     font-size: 2vh;
@@ -798,16 +791,14 @@ a {
 }
 
 /*style dla gwiazdek Parallax*/
-.stars {
+/*.stars {
     display: flex;
     max-height: 500px;
 }
 .stars {
-    height: 260px;
-    
+    height: 260px;    
     width: 350px; 
 }
-
 
 .stars-1 {
     background-image: url(img/elements/parallax_star1.png);
@@ -838,7 +829,7 @@ a {
     position: absolute;
     top: 2%;     
 }
-
+*/
 
 
 @media (max-width: 1024px) {

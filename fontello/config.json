@@ -41,6 +41,12 @@
       "css": "css3",
       "code": 61756,
       "src": "fontawesome"
+    },
+    {
+      "uid": "b49fa3e57e92b38143e0fdcc5d9a904b",
+      "css": "gmail",
+      "code": 59394,
+      "src": "zocial"
     }
   ]
 }

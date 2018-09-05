@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'fontello';
-  src: url('../font/fontello.eot?82005448');
-  src: url('../font/fontello.eot?82005448#iefix') format('embedded-opentype'),
-       url('../font/fontello.woff2?82005448') format('woff2'),
-       url('../font/fontello.woff?82005448') format('woff'),
-       url('../font/fontello.ttf?82005448') format('truetype'),
-       url('../font/fontello.svg?82005448#fontello') format('svg');
+  src: url('../font/fontello.eot?89339985');
+  src: url('../font/fontello.eot?89339985#iefix') format('embedded-opentype'),
+       url('../font/fontello.woff2?89339985') format('woff2'),
+       url('../font/fontello.woff?89339985') format('woff'),
+       url('../font/fontello.ttf?89339985') format('truetype'),
+       url('../font/fontello.svg?89339985#fontello') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -15,7 +15,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'fontello';
-    src: url('../font/fontello.svg?82005448#fontello') format('svg');
+    src: url('../font/fontello.svg?89339985#fontello') format('svg');
   }
 }
 */
@@ -55,10 +55,10 @@
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
  
-.icon-css:before { content: '\e800'; font-size: 10vh; color: #ff0022; padding: 5%; text-align: center;} /* '' */
-.icon-github-circled:before { content: '\e801'; font-size: 10vh; color: #ff0022; padding: 5%; text-align: center; } /* '' */
-.icon-html5-1:before { content: '\f13b'; font-size: 10vh; color: #ff0022; padding: 5%; text-align: center;} /* '' */
-.icon-css3:before { content: '\f13c'; font-size: 10vh; color: #ff0022; padding: 5%; text-align: center;} /* '' */
-.icon-git:before { content: '\f1d3'; font-size: 10vh; color: #ff0022; padding: 5%; text-align: center;} /* '' */
-.icon-wordpress:before { content: '\f31d'; font-size: 10vh; color: #ff0022; padding: 5%; text-align: center;} /* '' */
-
+.icon-css:before { content: '\e800'; font-size: 10vh; color: #FF6622; text-align: center;} /* '' */
+.icon-github-circled:before { content: '\e801'; font-size: 10vh; color: #ff0022;text-align: center;} /* '' */
+.icon-gmail:before { content: '\e802'; font-size: 10vh; color: #ff5e00; text-align: center; opacity: 0.8;} /* '' */
+.icon-html5-1:before { content: '\f13b'; font-size: 10vh; color: #ff0022; text-align: center;} /* '' */
+.icon-css3:before { content: '\f13c'; font-size: 10vh; color: #FF6622; text-align: center;} /* '' */
+.icon-git:before { content: '\f1d3'; font-size: 10vh; color: #FFA022; text-align: center;} /* '' */
+.icon-wordpress:before { content: '\f31d'; font-size: 10vh; color: #D70022; text-align: center; } /* '' */

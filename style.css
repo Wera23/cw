@@ -55,7 +55,6 @@ a {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    border: 1px solid green;
 }
 
 .board_start_screen {
@@ -75,9 +74,9 @@ a {
 
 .board_start a {
     position: absolute;
-    color: #c3f1f2;
-    border-bottom: 1px dashed #c3f1f2;
-    bottom: 5%;
+    color: #BAD6D0;
+    border-bottom: 1px dashed #BAD6D0;
+    bottom: 9%;
 }
 
 .board_start a:hover {
@@ -128,20 +127,19 @@ a {
     margin-right: 5%;
 }
 
-.what{    
+.what,
+.other_stuff{    
     display: flex;
-    flex-direction: row;    
+    flex-direction: row; 
+    padding: 8%;   
 }
 
-.fontello_html{
+.fontello_html,
+.fontello_css,
+.fontello_git,
+.fontello_wordpress{
     flex:1;   
 }
-
-.fontello_css{
-    flex: 1;    
-}
-
-
 
 /*style dla planszy board_travel*/
 
@@ -860,7 +858,8 @@ a {
         margin-top: 15%;
         margin-bottom: 10%;
         margin-right: 1%;  
-        align-items: center;       
+        align-items: center;      
+        flex-direction: column-reverse; 
     }
 
     .board_start .about {

@@ -84,53 +84,22 @@
 
 /*moje fontello*/
 
-/*css icon*/
-.icon-css {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-}
-.icon-css:hover, .icon-css:focus, .icon-css:active {
-  -webkit-animation-name: hvr-pulse;
-  animation-name: hvr-pulse;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-timing-function: linear;
-  animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-}
 
-/*html icon*/
-.icon-html5-1 {
+/*moje icon icon*/
+.icon-git,
+.icon-html5-1,
+.icon-css,
+.icon-wordpress {
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
-.icon-html5-1:hover, .icon-html5-1:focus, .icon-html5-1:active {
-  -webkit-animation-name: hvr-pulse;
-  animation-name: hvr-pulse;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-timing-function: linear;
-  animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-}
-
-/*html icon*/
-.icon-github-circled {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-}
-.icon-github-circled:hover, .icon-github-circled:focus, .icon-github-circled:active {
+.icon-git:hover, .icon-git:focus, .icon-git:active,
+.icon-css:hover, .icon-css:focus, .icon-css:active,
+.icon-html5-1:hover, .icon-html5-1:focus, .icon-html5-1:active,
+.icon-wordpress:hover, .icon-wordpress:focus, .icon-wordpress:active {
   -webkit-animation-name: hvr-pulse;
   animation-name: hvr-pulse;
   -webkit-animation-duration: 1s;

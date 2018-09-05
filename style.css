@@ -74,14 +74,14 @@ a {
 
 .board_start a {
     position: absolute;
-    color: #BAD6D0;
-    border-bottom: 1px dashed #BAD6D0;
+    color: #FF6622;
+    border-bottom: 1px dashed #FF6622;
     bottom: 9%;
 }
 
 .board_start a:hover {
-    color: #fd3636;
-    border-bottom: 1px dashed #fd3636;
+    color: #ff0022;
+    border-bottom: 1px dashed #ff0022;
 }
 
 .board_start_content{
@@ -102,7 +102,7 @@ a {
 .board_start_content .about p {
     margin-bottom: 25px;
     text-align: right;
-    color: #468075;
+    color: #14132E;
 }
 
 .board_start_content .photo .h2-photo {

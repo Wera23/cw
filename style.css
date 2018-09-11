@@ -132,6 +132,7 @@ a {
 .fontello_git,
 .fontello_wordpress{
     flex:1;   
+    display: none;
 }
 
 /*style dla planszy board_travel*/

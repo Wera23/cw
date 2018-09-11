@@ -99,11 +99,9 @@ a {
     margin-bottom: 25px;
     text-align: right;
     color: #14132E;
+    
 }
 
-.board_start_content .photo .h2-photo {
-    font-size: 15px;
-}
 
 .board_start_screen,
 .board_start {
@@ -847,21 +845,23 @@ a {
     }
 
     .board_start {
-        margin-top: 15%;
-        margin-bottom: 10%;
-        margin-right: 1%;  
+        margin-top: 5%;
+        margin-bottom: 5%;
+        margin-right: 5%;  
         align-items: center;      
         flex-direction: column-reverse; 
     }
 
     .board_start_content{
         width: 100%;
+        font-size: 16px;
     }
 
     .board_start .about {
         width: 100%;
-        padding: 10%;
-    }     
+        padding: 2%;
+    }  
+
 
      /*style dla board_travel*/
      .board_travel_gallery {        
@@ -948,6 +948,5 @@ a {
         margin: 0;
     } 
 
-    
 }
 
